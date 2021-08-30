@@ -1,0 +1,8 @@
+server:
+  port: 8301
+  servlet:
+    context-path: /es
+
+
+
+

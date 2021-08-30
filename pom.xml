@@ -11,6 +11,7 @@
 
     <modules>
         <module>minio-demo</module>
+        <module>elasticsearch-demo</module>
     </modules>
 
     <properties>

@@ -1,0 +1,26 @@
+server:
+  port: 8300
+  servlet:
+    context-path: /minio
+
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+
+minio:
+  endpoint: localhost
+  port: *
+  secure: false
+  access-key: *
+  secret-key: *
+
+swagger:
+  switch: true
+
+
+
+

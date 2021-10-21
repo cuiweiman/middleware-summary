@@ -12,6 +12,7 @@
     <modules>
         <module>minio-demo</module>
         <module>elasticsearch-demo</module>
+        <module>camel-demo</module>
     </modules>
 
     <properties>

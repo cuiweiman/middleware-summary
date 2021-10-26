@@ -1,0 +1,35 @@
+server:
+  port: 8302
+  servlet:
+    context-path: /camel
+
+spring:
+  application:
+    name: @artifactId@
+    version: @project.version@
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://*:*/test?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true \
+    &zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai"
+    username: root
+    password: *
+    platform: mysql
+    initialization-mode: always
+
+
+swagger:
+  switch: true
+
+
+
+mybatis-plus:
+  mapper-locations: classpath:mappers/*Mapper.xml
+  global-config:
+    db-config:
+      id-type: input
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    auto-mapping-unknown-column-behavior: none
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

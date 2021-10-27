@@ -1,6 +1,6 @@
-package com.middleware.camel.module.mysqltokafka.controller;
+package com.middleware.camel.module.mysql.controller;
 
-import com.middleware.camel.module.mysqltokafka.model.Employee;
+import com.middleware.camel.module.mysql.vo.EmployeeVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -40,9 +40,9 @@ public class CamelController {
 
     @PostMapping("/add")
     @ApiOperation(value = "新增雇员")
-    @ApiImplicitParam(name = "employee", value = "雇员信息", required = true)
-    public ResponseEntity<Boolean> addEmployee(@RequestBody Employee employee) {
-        final List list = producerTemplate.requestBody("direct:insert", employee, List.class);
+    @ApiImplicitParam(name = "employeeVO", value = "雇员信息", required = true)
+    public ResponseEntity<Boolean> addEmployee(@RequestBody EmployeeVO employeeVO) {
+        final List list = producerTemplate.requestBody("direct:insert", employeeVO, List.class);
         log.info(list.toString());
         return ResponseEntity.ok(true);
     }

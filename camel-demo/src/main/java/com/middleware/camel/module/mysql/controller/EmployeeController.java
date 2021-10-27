@@ -1,9 +1,9 @@
-package com.middleware.camel.module.mysqltokafka.controller;
+package com.middleware.camel.module.mysql.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.middleware.camel.module.mysqltokafka.mapper.EmployeeMapper;
-import com.middleware.camel.module.mysqltokafka.model.Employee;
+import com.middleware.camel.module.mysql.mapper.EmployeeMapper;
+import com.middleware.camel.module.mysql.model.Employee;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;

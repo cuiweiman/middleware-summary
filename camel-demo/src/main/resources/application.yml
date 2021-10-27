@@ -21,8 +21,6 @@ spring:
 swagger:
   switch: true
 
-
-
 mybatis-plus:
   mapper-locations: classpath:mappers/*Mapper.xml
   global-config:

@@ -1,4 +1,4 @@
-package com.middleware.camel.module.mysqltokafka.model;
+package com.middleware.camel.module.mysql.model;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
